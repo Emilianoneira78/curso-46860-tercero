@@ -1,0 +1,51 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background-color:$background;
+    padding: 1.25rem;
+    margin: auto;
+    border-radius: .625rem;
+    height: auto;
+    margin: 2%;
+    
+    .logo {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          align-items: center;
+          justify-content: center;
+         
+          img {  width: 40%}
+            p {color: $font-color }
+            }
+    
+.historiaFooter{
+ h2 {font-size: 1.375rem;}
+}
+
+ .nav-foot {
+           li {list-style: none;
+           a  {
+             text-decoration: none;
+             color: rgb(10, 10, 10);
+             font-size: 1.25rem ;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   }
+}
+   .datos-contacto{
+    h2 {font-size: 1.375rem;}
+    .ubicacion {
+    text-align: justify;}
+
+    .mailFooter a {
+       text-decoration: none;
+       color: black;
+
+    }
+    .mailFooter {
+        padding-bottom: .6875rem;
+    }
+   }
+}

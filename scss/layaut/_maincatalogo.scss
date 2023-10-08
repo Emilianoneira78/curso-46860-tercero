@@ -1,0 +1,93 @@
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+.catalogo {
+    color: #484a50;
+    background-image: url(../assets/fotos/baner_catalogo.jpg);
+    @include banner;
+    @include h2_banner;
+        
+    }
+   
+
+    .cards {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        background: $white;
+        box-shadow: 2px 2px 25px 0px rgba(128, 128, 128, 0.247);
+        border-radius: 15px;
+        padding: 15px;
+        column-gap: 10px ;
+        row-gap: .625rem;
+        margin: 2% auto;
+        
+        img {
+            width: 50%;
+        }   
+        h3 {
+            font-size: 1.125rem;
+        }
+        p {
+                margin-top: 15px;
+                color: $grayish-blue;
+                text-align: left;
+                font-weight: 400;
+                font-size: .875rem;
+            }
+
+        .card1 {
+           
+            padding: 20px;
+            width: 18.75rem;
+            min-height: 280px;
+            border-radius: 20px;
+            background: #e8e8e8;
+            box-shadow: 5px 5px 6px #dadada,
+                         -5px -5px 6px #f6f6f6;
+            
+
+        }
+        .card2 {
+           @extend .card1;
+
+        }
+        .card3 {
+            @extend .card1;
+
+
+        }
+        .card4 {
+            @extend .card1;
+
+
+        }
+        .card5{
+            @extend .card1;
+
+        }
+        .card6 {
+            @extend .card1;
+
+        }
+        .card7 {
+            @extend .card1;
+
+
+        }
+        .card8 {
+            @extend .card1;
+
+
+        }
+    
+
+
+        }
+
+

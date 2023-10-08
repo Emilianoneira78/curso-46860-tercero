@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    background: $background;
+   
+    width: 98%;  
+    border-radius: 10px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
+    .navbar li {text-indent: .5rem;
+        
+         a {
+            text-decoration: none;
+            color: rgb(24, 21, 21);
+            font-size: 20px;         
+          }
+          & :hover {color: white;}
+    }
+
+
+}

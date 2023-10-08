@@ -1,0 +1,46 @@
+
+@media (max-width: 768px) {
+.footer {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+row-gap: 20px;
+.nav-foot {padding-top: 60px;}
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 2% auto;
+   
+}
+.map-quienes {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+   
+    column-gap: .625rem;
+    margin:  auto;
+    
+    h3 {text-align: center;
+    font-size: 1.125rem;}
+    li {
+        font-size: 1.125rem;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+    .mapouter {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-bottom: 20px;
+        
+        
+        
+    }
+   
+}
+
+
+
+}

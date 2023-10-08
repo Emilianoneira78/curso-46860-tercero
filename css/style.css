@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  background-color: #f0f3f5;
+  padding: 1.25rem;
+  margin: auto;
+  border-radius: 0.625rem;
+  height: auto;
+  margin: 2%;
+}
+.footer .logo {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.footer .logo img {
+  width: 40%;
+}
+.footer .logo p {
+  color: rgb(97, 94, 94);
+}
+.footer .historiaFooter h2 {
+  font-size: 1.375rem;
+}
+.footer .nav-foot li {
+  list-style: none;
+}
+.footer .nav-foot li a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  font-size: 1.25rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.footer .datos-contacto h2 {
+  font-size: 1.375rem;
+}
+.footer .datos-contacto .ubicacion {
+  text-align: justify;
+}
+.footer .datos-contacto .mailFooter a {
+  text-decoration: none;
+  color: black;
+}
+.footer .datos-contacto .mailFooter {
+  padding-bottom: 0.6875rem;
+}
+
+header {
+  display: flex;
+  background: #f0f3f5;
+  width: 98%;
+  border-radius: 10px;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar li {
+  text-indent: 0.5rem;
+}
+header .navbar li a {
+  text-decoration: none;
+  color: rgb(24, 21, 21);
+  font-size: 20px;
+}
+header .navbar li :hover {
+  color: white;
+}
+
+.frase {
+  display: flex;
+  height: 18.75rem;
+  margin: 2%;
+  background-image: url("../assets/fotos/image-home.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: rgb(22, 21, 21);
+  border-radius: 10px;
+}
+.frase h2 {
+  font-size: 1.5625rem;
+  padding: 20px;
+  height: 50%;
+}
+.frase h2:hover {
+  color: white;
+}
+
+body {
+  background: rgb(221, 234, 237);
+  background: linear-gradient(0deg, rgb(221, 234, 237) 48%, rgb(223, 227, 232) 81%);
+}
+
+.catalogo {
+  color: #484a50;
+  background-image: url(../assets/fotos/baner_catalogo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9.375rem;
+  color: rgb(14, 13, 13);
+  font-size: 1.875rem;
+  padding: 3.125rem;
+}
+.catalogo:hover {
+  color: white;
+}
+
+.cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 2px 2px 25px 0px rgba(128, 128, 128, 0.247);
+  border-radius: 15px;
+  padding: 15px;
+  column-gap: 10px;
+  row-gap: 0.625rem;
+  margin: 2% auto;
+}
+.cards img {
+  width: 50%;
+}
+.cards h3 {
+  font-size: 1.125rem;
+}
+.cards p {
+  margin-top: 15px;
+  color: hsl(220, 15%, 55%);
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.cards .card1, .cards .card8, .cards .card7, .cards .card6, .cards .card5, .cards .card4, .cards .card3, .cards .card2 {
+  padding: 20px;
+  width: 18.75rem;
+  min-height: 280px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+}
+.banner-ofertas {
+  color: #484a50;
+  background-image: url(../assets/fotos/baner_catalogo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9.375rem;
+  margin-top: 1.25rem;
+}
+.banner-ofertas h2 {
+  font-size: 1.875rem;
+  padding: 3.125rem;
+}
+.banner-ofertas:hover {
+  color: white;
+}
+
+.quienes-somos {
+  background-image: url(../assets/fotos/quienes-somos.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9.375rem;
+  color: rgb(14, 13, 13);
+  font-size: 1.875rem;
+  padding: 3.125rem;
+}
+.quienes-somos:hover {
+  color: white;
+}
+
+.map-quienes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5%;
+}
+.map-quienes h3 {
+  text-align: center;
+  font-size: 1.125rem;
+  color: rgb(97, 94, 94);
+}
+.map-quienes li {
+  font-size: 1.125rem;
+}
+.map-quienes h4 {
+  font-size: 1.25rem;
+  color: rgb(97, 94, 94);
+}
+
+.registro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: rgb(39, 136, 226);
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before, .title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: rgb(39, 136, 226);
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(39, 136, 226);
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: rgb(39, 136, 226);
+}
+
+.signin a:hover {
+  text-decoration: underline rgb(39, 136, 226);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span, .form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .footer .nav-foot {
+    padding-top: 60px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2% auto;
+  }
+  .map-quienes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    column-gap: 0.625rem;
+    margin: auto;
+  }
+  .map-quienes h3 {
+    text-align: center;
+    font-size: 1.125rem;
+  }
+  .map-quienes li {
+    font-size: 1.125rem;
+  }
+  .map-quienes h4 {
+    font-size: 16px;
+  }
+  .map-quienes .mapouter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .frase {
+    width: 100%;
+    margin: 2px;
+    padding-left: 1.25rem;
+  }
+  .frase h2 {
+    font-size: 0.875rem;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 0.625rem;
+    width: 100%;
+    margin: 2%;
+  }
+  .footer .logo {
+    font-size: 0.9375rem;
+  }
+  .footer .historiaFooter {
+    padding-left: 1.25rem;
+  }
+  .footer .historiaFooter h2 {
+    font-size: 0.875rem;
+  }
+  .footer .historiaFooter p {
+    font-size: 0.875rem;
+  }
+  .footer .datos-contacto {
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+  }
+  .footer .datos-contacto h2 {
+    font-size: 0.875rem;
+  }
+  .catalogo {
+    color: white;
+  }
+  .map-quienes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 18.75rem;
+    column-gap: 0.625rem;
+  }
+  .map-quienes h3 {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  .map-quienes li {
+    font-size: 0.875rem;
+  }
+  .map-quienes h4 {
+    font-size: 16px;
+  }
+  .map-quienes .mapouter iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
