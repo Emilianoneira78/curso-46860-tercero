@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,800;1,6..12,500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,800;1,6..12,500&display=swap");
+  font-family: Nunito Sans;
 }
 
 .footer {
@@ -12,7 +15,7 @@
   padding: 1.25rem;
   margin: auto;
   border-radius: 0.625rem;
-  height: auto;
+  height: 260px;
   margin: 2%;
 }
 .footer .logo {
@@ -23,58 +26,100 @@
   justify-content: center;
 }
 .footer .logo img {
-  width: 40%;
+  width: 35%;
 }
 .footer .logo p {
   color: rgb(97, 94, 94);
+  font-size: 10px;
 }
 .footer .historiaFooter h2 {
   font-size: 1.375rem;
+  color: rgb(13, 138, 221);
 }
-.footer .nav-foot li {
+.footer .historiaFooter p {
+  font-size: 12px;
+}
+.footer nav ul {
+  margin-top: 53px;
+}
+.footer nav ul li {
   list-style: none;
 }
-.footer .nav-foot li a {
+.footer nav ul li a {
   text-decoration: none;
-  color: rgb(10, 10, 10);
-  font-size: 1.25rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(97, 94, 94);
+  font-weight: 800;
 }
 .footer .datos-contacto h2 {
   font-size: 1.375rem;
+  color: rgb(13, 138, 221);
 }
 .footer .datos-contacto .ubicacion {
   text-align: justify;
+  font-size: 12px;
 }
 .footer .datos-contacto .mailFooter a {
   text-decoration: none;
   color: black;
 }
+.footer .datos-contacto .telefono {
+  font-size: 12px;
+}
 .footer .datos-contacto .mailFooter {
   padding-bottom: 0.6875rem;
+}
+.footer .datos-contacto a {
+  font-weight: 600;
+}
+.footer .datos-contacto a:hover {
+  color: rgb(44, 113, 240);
 }
 
 header {
   display: flex;
-  background: #f0f3f5;
-  width: 98%;
-  border-radius: 10px;
+  border-bottom: 2px solid rgb(0, 121, 217);
+  width: 90%;
   margin: 10px auto;
   align-items: center;
   justify-content: space-between;
 }
 header .navbar li {
-  text-indent: 0.5rem;
+  text-indent: 15px;
 }
 header .navbar li a {
   text-decoration: none;
-  color: rgb(24, 21, 21);
+  color: rgb(0, 121, 217);
   font-size: 20px;
+  box-shadow: 2px 0 1, 5px 3px;
 }
 header .navbar li :hover {
-  color: white;
+  color: grey;
 }
 
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
 .frase {
   display: flex;
   height: 18.75rem;
@@ -86,17 +131,73 @@ header .navbar li :hover {
   border-radius: 10px;
 }
 .frase h2 {
-  font-size: 1.5625rem;
+  font-size: 1.875rem;
   padding: 20px;
   height: 50%;
-}
-.frase h2:hover {
-  color: white;
 }
 
 body {
   background: rgb(221, 234, 237);
   background: linear-gradient(0deg, rgb(221, 234, 237) 48%, rgb(223, 227, 232) 81%);
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+  column-gap: 1.875rem;
+  margin: 1% auto;
+}
+.nosotros .foto-nosotros {
+  width: 100%;
+  background-image: url("../assets/fotos/COMPRAREPUESTOS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid rgb(227, 234, 240);
+  border-radius: 10px;
+  margin: 2%;
+}
+.nosotros .texto-nosotros {
+  margin-right: 1.25rem;
+}
+.nosotros .texto-nosotros h2 {
+  font-size: 25px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.nosotros .texto-nosotros h3 {
+  font-size: 15px;
+  padding-bottom: 1.25rem;
+  text-align: justify;
+}
+
+.marcas {
+  width: 100%;
+  font-size: 25px;
+  color: rgb(22, 21, 21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.nuestras-marcas {
+  width: 70%;
+  height: 1fr;
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+}
+.nuestras-marcas .imgagenes-marcas {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+.nuestras-marcas .imgagenes-marcas img {
+  row-gap: 20px;
 }
 
 .catalogo {
@@ -112,44 +213,44 @@ body {
   padding: 3.125rem;
 }
 .catalogo:hover {
-  color: white;
+  color: rgb(13, 138, 221);
 }
 
-.cards {
+.cards-cat {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
-  background: hsl(0, 0%, 100%);
-  box-shadow: 2px 2px 25px 0px rgba(128, 128, 128, 0.247);
-  border-radius: 15px;
-  padding: 15px;
-  column-gap: 10px;
+  justify-content: space-around;
+  column-gap: 2px;
   row-gap: 0.625rem;
+  margin: 10px 0px 10px 0px;
+}
+.cards-cat .card1, .cards-cat .card8, .cards-cat .card7, .cards-cat .card6, .cards-cat .card5, .cards-cat .card4, .cards-cat .card3, .cards-cat .card2 {
   margin: 2% auto;
-}
-.cards img {
-  width: 50%;
-}
-.cards h3 {
-  font-size: 1.125rem;
-}
-.cards p {
-  margin-top: 15px;
-  color: hsl(220, 15%, 55%);
-  text-align: left;
-  font-weight: 400;
-  font-size: 0.875rem;
-}
-.cards .card1, .cards .card8, .cards .card7, .cards .card6, .cards .card5, .cards .card4, .cards .card3, .cards .card2 {
-  padding: 20px;
+  padding: 10px;
   width: 18.75rem;
   min-height: 280px;
   border-radius: 20px;
   background: #e8e8e8;
   box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+}
+.cards-cat .card1 img, .cards-cat .card8 img, .cards-cat .card7 img, .cards-cat .card6 img, .cards-cat .card5 img, .cards-cat .card4 img, .cards-cat .card3 img, .cards-cat .card2 img {
+  width: 50%;
+}
+.cards-cat .card1 h3, .cards-cat .card8 h3, .cards-cat .card7 h3, .cards-cat .card6 h3, .cards-cat .card5 h3, .cards-cat .card4 h3, .cards-cat .card3 h3, .cards-cat .card2 h3 {
+  font-size: 1.125rem;
+}
+.cards-cat .card1 h3:hover, .cards-cat .card8 h3:hover, .cards-cat .card7 h3:hover, .cards-cat .card6 h3:hover, .cards-cat .card5 h3:hover, .cards-cat .card4 h3:hover, .cards-cat .card3 h3:hover, .cards-cat .card2 h3:hover {
+  color: rgb(36, 127, 231);
+}
+.cards-cat .card1 p, .cards-cat .card8 p, .cards-cat .card7 p, .cards-cat .card6 p, .cards-cat .card5 p, .cards-cat .card4 p, .cards-cat .card3 p, .cards-cat .card2 p {
+  margin-top: 15px;
+  color: hsl(220, 15%, 55%);
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.875rem;
 }
 .banner-ofertas {
   color: #484a50;
@@ -159,14 +260,66 @@ body {
   background-size: cover;
   width: 100%;
   height: 9.375rem;
-  margin-top: 1.25rem;
-}
-.banner-ofertas h2 {
+  color: rgb(14, 13, 13);
   font-size: 1.875rem;
   padding: 3.125rem;
 }
 .banner-ofertas:hover {
-  color: white;
+  color: rgb(13, 138, 221);
+}
+
+.cards-ofertas {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2% auto;
+}
+.cards-ofertas .card1, .cards-ofertas .cards-cat .card2, .cards-cat .cards-ofertas .card2, .cards-ofertas .cards-cat .card3, .cards-cat .cards-ofertas .card3, .cards-ofertas .cards-cat .card4, .cards-cat .cards-ofertas .card4, .cards-ofertas .cards-cat .card5, .cards-cat .cards-ofertas .card5, .cards-ofertas .cards-cat .card6, .cards-cat .cards-ofertas .card6, .cards-ofertas .cards-cat .card7, .cards-cat .cards-ofertas .card7, .cards-ofertas .cards-cat .card8, .cards-cat .cards-ofertas .card8 {
+  display: grid;
+  grid-template-columns: 15% 65% 15%;
+  border: 2px solid rgb(0, 121, 217);
+  border-radius: 6px;
+  margin: 2%;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px 0px;
+}
+.cards-ofertas .card1 .descripcion, .cards-ofertas .cards-cat .card2 .descripcion, .cards-cat .cards-ofertas .card2 .descripcion, .cards-ofertas .cards-cat .card3 .descripcion, .cards-cat .cards-ofertas .card3 .descripcion, .cards-ofertas .cards-cat .card4 .descripcion, .cards-cat .cards-ofertas .card4 .descripcion, .cards-ofertas .cards-cat .card5 .descripcion, .cards-cat .cards-ofertas .card5 .descripcion, .cards-ofertas .cards-cat .card6 .descripcion, .cards-cat .cards-ofertas .card6 .descripcion, .cards-ofertas .cards-cat .card7 .descripcion, .cards-cat .cards-ofertas .card7 .descripcion, .cards-ofertas .cards-cat .card8 .descripcion, .cards-cat .cards-ofertas .card8 .descripcion {
+  padding-top: 15px;
+}
+.cards-ofertas .card1 .descripcion h2, .cards-ofertas .cards-cat .card2 .descripcion h2, .cards-cat .cards-ofertas .card2 .descripcion h2, .cards-ofertas .cards-cat .card3 .descripcion h2, .cards-cat .cards-ofertas .card3 .descripcion h2, .cards-ofertas .cards-cat .card4 .descripcion h2, .cards-cat .cards-ofertas .card4 .descripcion h2, .cards-ofertas .cards-cat .card5 .descripcion h2, .cards-cat .cards-ofertas .card5 .descripcion h2, .cards-ofertas .cards-cat .card6 .descripcion h2, .cards-cat .cards-ofertas .card6 .descripcion h2, .cards-ofertas .cards-cat .card7 .descripcion h2, .cards-cat .cards-ofertas .card7 .descripcion h2, .cards-ofertas .cards-cat .card8 .descripcion h2, .cards-cat .cards-ofertas .card8 .descripcion h2 {
+  font-size: 25px;
+}
+.cards-ofertas .card1 .descripcion h3, .cards-ofertas .cards-cat .card2 .descripcion h3, .cards-cat .cards-ofertas .card2 .descripcion h3, .cards-ofertas .cards-cat .card3 .descripcion h3, .cards-cat .cards-ofertas .card3 .descripcion h3, .cards-ofertas .cards-cat .card4 .descripcion h3, .cards-cat .cards-ofertas .card4 .descripcion h3, .cards-ofertas .cards-cat .card5 .descripcion h3, .cards-cat .cards-ofertas .card5 .descripcion h3, .cards-ofertas .cards-cat .card6 .descripcion h3, .cards-cat .cards-ofertas .card6 .descripcion h3, .cards-ofertas .cards-cat .card7 .descripcion h3, .cards-cat .cards-ofertas .card7 .descripcion h3, .cards-ofertas .cards-cat .card8 .descripcion h3, .cards-cat .cards-ofertas .card8 .descripcion h3 {
+  font-size: 15px;
+}
+.cards-ofertas .card1 .precio, .cards-ofertas .cards-cat .card2 .precio, .cards-cat .cards-ofertas .card2 .precio, .cards-ofertas .cards-cat .card3 .precio, .cards-cat .cards-ofertas .card3 .precio, .cards-ofertas .cards-cat .card4 .precio, .cards-cat .cards-ofertas .card4 .precio, .cards-ofertas .cards-cat .card5 .precio, .cards-cat .cards-ofertas .card5 .precio, .cards-ofertas .cards-cat .card6 .precio, .cards-cat .cards-ofertas .card6 .precio, .cards-ofertas .cards-cat .card7 .precio, .cards-cat .cards-ofertas .card7 .precio, .cards-ofertas .cards-cat .card8 .precio, .cards-cat .cards-ofertas .card8 .precio {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 15px;
+  color: rgb(0, 121, 217);
+}
+.cards-ofertas .card1 .precio h4, .cards-ofertas .cards-cat .card2 .precio h4, .cards-cat .cards-ofertas .card2 .precio h4, .cards-ofertas .cards-cat .card3 .precio h4, .cards-cat .cards-ofertas .card3 .precio h4, .cards-ofertas .cards-cat .card4 .precio h4, .cards-cat .cards-ofertas .card4 .precio h4, .cards-ofertas .cards-cat .card5 .precio h4, .cards-cat .cards-ofertas .card5 .precio h4, .cards-ofertas .cards-cat .card6 .precio h4, .cards-cat .cards-ofertas .card6 .precio h4, .cards-ofertas .cards-cat .card7 .precio h4, .cards-cat .cards-ofertas .card7 .precio h4, .cards-ofertas .cards-cat .card8 .precio h4, .cards-cat .cards-ofertas .card8 .precio h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.cards-ofertas .card1 .precio .comprar, .cards-ofertas .cards-cat .card2 .precio .comprar, .cards-cat .cards-ofertas .card2 .precio .comprar, .cards-ofertas .cards-cat .card3 .precio .comprar, .cards-cat .cards-ofertas .card3 .precio .comprar, .cards-ofertas .cards-cat .card4 .precio .comprar, .cards-cat .cards-ofertas .card4 .precio .comprar, .cards-ofertas .cards-cat .card5 .precio .comprar, .cards-cat .cards-ofertas .card5 .precio .comprar, .cards-ofertas .cards-cat .card6 .precio .comprar, .cards-cat .cards-ofertas .card6 .precio .comprar, .cards-ofertas .cards-cat .card7 .precio .comprar, .cards-cat .cards-ofertas .card7 .precio .comprar, .cards-ofertas .cards-cat .card8 .precio .comprar, .cards-cat .cards-ofertas .card8 .precio .comprar {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+}
+.cards-ofertas .card1 .precio .comprar button, .cards-ofertas .cards-cat .card2 .precio .comprar button, .cards-cat .cards-ofertas .card2 .precio .comprar button, .cards-ofertas .cards-cat .card3 .precio .comprar button, .cards-cat .cards-ofertas .card3 .precio .comprar button, .cards-ofertas .cards-cat .card4 .precio .comprar button, .cards-cat .cards-ofertas .card4 .precio .comprar button, .cards-ofertas .cards-cat .card5 .precio .comprar button, .cards-cat .cards-ofertas .card5 .precio .comprar button, .cards-ofertas .cards-cat .card6 .precio .comprar button, .cards-cat .cards-ofertas .card6 .precio .comprar button, .cards-ofertas .cards-cat .card7 .precio .comprar button, .cards-cat .cards-ofertas .card7 .precio .comprar button, .cards-ofertas .cards-cat .card8 .precio .comprar button, .cards-cat .cards-ofertas .card8 .precio .comprar button {
+  font-size: 15px;
+  width: 100px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+.cards-ofertas .card1 img, .cards-ofertas .cards-cat .card2 img, .cards-cat .cards-ofertas .card2 img, .cards-ofertas .cards-cat .card3 img, .cards-cat .cards-ofertas .card3 img, .cards-ofertas .cards-cat .card4 img, .cards-cat .cards-ofertas .card4 img, .cards-ofertas .cards-cat .card5 img, .cards-cat .cards-ofertas .card5 img, .cards-ofertas .cards-cat .card6 img, .cards-cat .cards-ofertas .card6 img, .cards-ofertas .cards-cat .card7 img, .cards-cat .cards-ofertas .card7 img, .cards-ofertas .cards-cat .card8 img, .cards-cat .cards-ofertas .card8 img {
+  padding-left: 20px;
 }
 
 .quienes-somos {
@@ -181,25 +334,42 @@ body {
   padding: 3.125rem;
 }
 .quienes-somos:hover {
-  color: white;
+  color: rgb(13, 138, 221);
 }
 
-.map-quienes {
+.quienes-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 5%;
+  width: 1fr;
+  margin: 30px 2%;
 }
-.map-quienes h3 {
+.quienes-main .lista {
+  margin-left: 20px;
+}
+.quienes-main .lista .list {
+  font-size: 18px;
   text-align: center;
-  font-size: 1.125rem;
-  color: rgb(97, 94, 94);
+  font-weight: 600;
 }
-.map-quienes li {
-  font-size: 1.125rem;
+.quienes-main .lista .hist-quienes {
+  font-size: 14px;
+  font-weight: 550;
 }
-.map-quienes h4 {
-  font-size: 1.25rem;
-  color: rgb(97, 94, 94);
+
+.contacto {
+  color: #484a50;
+  background-image: url(../assets/fotos/mano-tel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9.375rem;
+  color: rgb(14, 13, 13);
+  font-size: 1.875rem;
+  padding: 3.125rem;
+}
+.contacto:hover {
+  color: rgb(13, 138, 221);
 }
 
 .registro {
@@ -338,42 +508,62 @@ body {
     opacity: 0;
   }
 }
+@media (max-width: 1024px) {
+  /***inicio***/
+  .frase h2 {
+    font-size: 30px;
+  }
+  /****catalogo****/
+  .cards-cat {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    margin: 2% auto;
+  }
+}
 @media (max-width: 768px) {
+  .frase h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
   .footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
+    row-gap: 30px;
   }
-  .footer .nav-foot {
-    padding-top: 60px;
+  .footer .historiaFooter {
+    margin-top: 20px;
   }
-  .cards {
-    display: grid;
+  .footer .datos-contacto {
+    margin-top: 20px;
+  }
+  .cards-cat {
     grid-template-columns: repeat(2, 1fr);
-    margin: 2% auto;
-  }
-  .map-quienes {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    column-gap: 0.625rem;
     margin: auto;
+    padding-left: 2px;
+    row-gap: 30px;
   }
-  .map-quienes h3 {
-    text-align: center;
-    font-size: 1.125rem;
-  }
-  .map-quienes li {
-    font-size: 1.125rem;
-  }
-  .map-quienes h4 {
+  .quienes-main .lista .list {
     font-size: 16px;
   }
-  .map-quienes .mapouter {
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    margin-bottom: 20px;
+  .quienes-main .lista .hist-quienes {
+    font-size: 14px;
+  }
+  .cards-ofertas .card1, .cards-ofertas .cards-cat .card2, .cards-cat .cards-ofertas .card2, .cards-ofertas .cards-cat .card3, .cards-cat .cards-ofertas .card3, .cards-ofertas .cards-cat .card4, .cards-cat .cards-ofertas .card4, .cards-ofertas .cards-cat .card5, .cards-cat .cards-ofertas .card5, .cards-ofertas .cards-cat .card6, .cards-cat .cards-ofertas .card6, .cards-ofertas .cards-cat .card7, .cards-cat .cards-ofertas .card7, .cards-ofertas .cards-cat .card8, .cards-cat .cards-ofertas .card8 {
+    grid-template-columns: 20% 55% 15%;
+  }
+  /****quienes somos***/
+  .quienes-somos {
+    color: black;
+  }
+  .quienes-somos h2 {
+    font-weight: 600;
+  }
+  /***contacto***/
+  .contacto {
+    color: black;
+  }
+  .contacto h2 {
+    font-weight: 600;
   }
 }
 @media (max-width: 320px) {
@@ -388,6 +578,18 @@ body {
   }
   .frase h2 {
     font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .texto-nosotros h3 {
+    padding: 10px;
+  }
+  .nuestras-marcas .imgagenes-marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer {
     display: grid;
@@ -419,26 +621,61 @@ body {
   .catalogo {
     color: white;
   }
-  .map-quienes {
+  .cards-cat {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+  .quienes-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .quienes-main .lista .list {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .quienes-main .lista .hist-quienes {
+    font-size: 12px;
+  }
+  /***ofertas***/
+  .banner-ofertas {
+    color: white;
+  }
+  .banner-ofertas h2 {
+    font-size: 40px;
+  }
+  .cards-ofertas {
+    width: 100%;
+  }
+  .cards-ofertas .card1, .cards-ofertas .cards-cat .card2, .cards-cat .cards-ofertas .card2, .cards-ofertas .cards-cat .card3, .cards-cat .cards-ofertas .card3, .cards-ofertas .cards-cat .card4, .cards-cat .cards-ofertas .card4, .cards-ofertas .cards-cat .card5, .cards-cat .cards-ofertas .card5, .cards-ofertas .cards-cat .card6, .cards-cat .cards-ofertas .card6, .cards-ofertas .cards-cat .card7, .cards-cat .cards-ofertas .card7, .cards-ofertas .cards-cat .card8, .cards-cat .cards-ofertas .card8 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-ofertas .card1 .descripcion h2, .cards-ofertas .cards-cat .card2 .descripcion h2, .cards-cat .cards-ofertas .card2 .descripcion h2, .cards-ofertas .cards-cat .card3 .descripcion h2, .cards-cat .cards-ofertas .card3 .descripcion h2, .cards-ofertas .cards-cat .card4 .descripcion h2, .cards-cat .cards-ofertas .card4 .descripcion h2, .cards-ofertas .cards-cat .card5 .descripcion h2, .cards-cat .cards-ofertas .card5 .descripcion h2, .cards-ofertas .cards-cat .card6 .descripcion h2, .cards-cat .cards-ofertas .card6 .descripcion h2, .cards-ofertas .cards-cat .card7 .descripcion h2, .cards-cat .cards-ofertas .card7 .descripcion h2, .cards-ofertas .cards-cat .card8 .descripcion h2, .cards-cat .cards-ofertas .card8 .descripcion h2 {
+    font-size: 20px;
     text-align: center;
-    width: 18.75rem;
-    column-gap: 0.625rem;
   }
-  .map-quienes h3 {
+  .cards-ofertas .card1 .descripcion h3, .cards-ofertas .cards-cat .card2 .descripcion h3, .cards-cat .cards-ofertas .card2 .descripcion h3, .cards-ofertas .cards-cat .card3 .descripcion h3, .cards-cat .cards-ofertas .card3 .descripcion h3, .cards-ofertas .cards-cat .card4 .descripcion h3, .cards-cat .cards-ofertas .card4 .descripcion h3, .cards-ofertas .cards-cat .card5 .descripcion h3, .cards-cat .cards-ofertas .card5 .descripcion h3, .cards-ofertas .cards-cat .card6 .descripcion h3, .cards-cat .cards-ofertas .card6 .descripcion h3, .cards-ofertas .cards-cat .card7 .descripcion h3, .cards-cat .cards-ofertas .card7 .descripcion h3, .cards-ofertas .cards-cat .card8 .descripcion h3, .cards-cat .cards-ofertas .card8 .descripcion h3 {
     text-align: center;
-    font-size: 0.875rem;
   }
-  .map-quienes li {
-    font-size: 0.875rem;
+  .cards-ofertas .card1 .precio, .cards-ofertas .cards-cat .card2 .precio, .cards-cat .cards-ofertas .card2 .precio, .cards-ofertas .cards-cat .card3 .precio, .cards-cat .cards-ofertas .card3 .precio, .cards-ofertas .cards-cat .card4 .precio, .cards-cat .cards-ofertas .card4 .precio, .cards-ofertas .cards-cat .card5 .precio, .cards-cat .cards-ofertas .card5 .precio, .cards-ofertas .cards-cat .card6 .precio, .cards-cat .cards-ofertas .card6 .precio, .cards-ofertas .cards-cat .card7 .precio, .cards-cat .cards-ofertas .card7 .precio, .cards-ofertas .cards-cat .card8 .precio, .cards-cat .cards-ofertas .card8 .precio {
+    padding-bottom: 20px;
   }
-  .map-quienes h4 {
-    font-size: 16px;
+  .cards-ofertas .card1 .precio h4, .cards-ofertas .cards-cat .card2 .precio h4, .cards-cat .cards-ofertas .card2 .precio h4, .cards-ofertas .cards-cat .card3 .precio h4, .cards-cat .cards-ofertas .card3 .precio h4, .cards-ofertas .cards-cat .card4 .precio h4, .cards-cat .cards-ofertas .card4 .precio h4, .cards-ofertas .cards-cat .card5 .precio h4, .cards-cat .cards-ofertas .card5 .precio h4, .cards-ofertas .cards-cat .card6 .precio h4, .cards-cat .cards-ofertas .card6 .precio h4, .cards-ofertas .cards-cat .card7 .precio h4, .cards-cat .cards-ofertas .card7 .precio h4, .cards-ofertas .cards-cat .card8 .precio h4, .cards-cat .cards-ofertas .card8 .precio h4 {
+    font-weight: 600;
   }
-  .map-quienes .mapouter iframe {
-    width: 300px;
-    height: 200px;
+  /***contacto***/
+  .contacto {
+    color: white;
+  }
+  .contacto h2 {
+    font-weight: 600;
+  }
+  .form {
+    padding: 5px;
+    margin: 2%;
   }
 }
 

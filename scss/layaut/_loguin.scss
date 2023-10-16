@@ -1,3 +1,11 @@
+
+.contacto {
+  color: #484a50;
+  background-image: url(../assets/fotos/mano-tel.jpg);
+  @include banner;
+  &:hover {color: rgb(13, 138, 221);}
+}
+
 .registro {
     display: flex;
     flex-direction: row;

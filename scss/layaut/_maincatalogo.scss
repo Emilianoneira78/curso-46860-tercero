@@ -1,55 +1,48 @@
-$white: hsl(0, 0%, 100%);
-$light-gray: hsl(212, 45%, 89%);
-$grayish-blue: hsl(220, 15%, 55%);
-$dark-blue: hsl(218, 44%, 22%);
 
 .catalogo {
     color: #484a50;
     background-image: url(../assets/fotos/baner_catalogo.jpg);
     @include banner;
-    @include h2_banner;
+    &:hover {color: rgb(13, 138, 221);}
         
     }
    
 
-    .cards {
+    .cards-cat {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
         align-items: center;
-        justify-content: center;
-        background: $white;
-        box-shadow: 2px 2px 25px 0px rgba(128, 128, 128, 0.247);
-        border-radius: 15px;
-        padding: 15px;
-        column-gap: 10px ;
+        justify-content:space-around;
+        column-gap: 2px ;
         row-gap: .625rem;
-        margin: 2% auto;
-        
-        img {
-            width: 50%;
-        }   
-        h3 {
-            font-size: 1.125rem;
-        }
-        p {
-                margin-top: 15px;
-                color: $grayish-blue;
-                text-align: left;
-                font-weight: 400;
-                font-size: .875rem;
-            }
+        margin: 10px 0px 10px 0px;
 
         .card1 {
            
-            padding: 20px;
+            margin:2% auto;
+            padding: 10px;
             width: 18.75rem;
             min-height: 280px;
             border-radius: 20px;
             background: #e8e8e8;
             box-shadow: 5px 5px 6px #dadada,
                          -5px -5px 6px #f6f6f6;
+             img {width: 50%;}   
+             h3 {
+                  font-size: 1.125rem;
+                  &:hover {color: rgb(36, 127, 231);}
+                           
+                        }
+                        p {
+                                margin-top: 15px;
+                                color: $grayish-blue;
+                                text-align: left;
+                                font-weight: 400;
+                                font-size: .875rem;
+                            }
+                         
             
 
         }

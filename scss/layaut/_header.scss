@@ -1,20 +1,20 @@
 header {
     display: flex;
-    background: $background;
-   
-    width: 98%;  
-    border-radius: 10px;
+   border-bottom: 2px solid rgb(0, 121, 217) ;
+    width: 90%;  
+    
     margin: 10px auto;
     align-items: center;
     justify-content: space-between;
-    .navbar li {text-indent: .5rem;
+    .navbar li {text-indent: 15px;
         
          a {
             text-decoration: none;
-            color: rgb(24, 21, 21);
-            font-size: 20px;         
+            color: rgb(0, 121, 217);
+            font-size: 20px;     
+            box-shadow: 2px 0 1,5px 3px;    
           }
-          & :hover {color: white;}
+          & :hover {color: grey;}
     }
 
 

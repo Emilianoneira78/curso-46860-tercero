@@ -1,25 +1,30 @@
 .quienes-somos {
     background-image:url(../assets/fotos/quienes-somos.png);
    @include banner;
-   @include h2_banner;
+  &:hover {color: rgb(13, 138, 221);}
   
 }
-     
-    .map-quienes {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin: 5%;
-        h3 {text-align: center;
-            font-size: 1.125rem;
-            color: $font-color;
-        }
-        li {
-            font-size: 1.125rem;
-        }
 
-        h4 {
-            font-size: 1.25rem;
-            color: $font-color;
-        }
+.quienes-main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 1fr;
+    margin: 30px 2% ;
+   
+    .lista {
+    margin-left: 20px;
+    .list { font-size: 18px;
+        text-align: center;
+    font-weight: 600;}
+    .hist-quienes {
+        font-size: 14px;
+        font-weight:550;
+    }
+
+   
+
 
     }
+
+
+}

@@ -1,46 +1,70 @@
 
 @media (max-width: 768px) {
-.footer {
+
+.frase {
+    h2 {
+    font-size: 20px;
+    font-weight: 600;
+    }
+}
+
+    .footer {
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-row-gap: 20px;
-.nav-foot {padding-top: 60px;}
+    row-gap: 30px;
+    .historiaFooter {
+        margin-top: 20px;
+    }
+    .datos-contacto {
+        margin-top: 20px;
+    }
+
+
+
+
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 2% auto;
-   
-}
-.map-quienes {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-   
-    column-gap: .625rem;
-    margin:  auto;
+.cards-cat{
     
-    h3 {text-align: center;
-    font-size: 1.125rem;}
-    li {
-        font-size: 1.125rem;
-    }
+    grid-template-columns: repeat(2,1fr);
+    margin: auto ;
+    padding-left: 2px;
+    row-gap: 30px;
+    
 
-    h4 {
-        font-size: 16px;
+
+
+
+}
+.quienes-main {
+    .lista {
+        .list {
+            font-size: 16px;
+            
+           
+        }
+        .hist-quienes {
+            font-size: 14px;
+        }
     }
-    .mapouter {
-        display: flex;
-        flex-direction: column;
-        margin-left: 80px;
-        margin-bottom: 20px;
-        
-        
-        
-    }
-   
+}
+.cards-ofertas {
+   .card1 {
+    grid-template-columns: 20% 55% 15% ;
+   }
 }
 
+/****quienes somos***/
+
+.quienes-somos {
+    color: black;
+    h2 {font-weight: 600;}
+}
+
+/***contacto***/
+
+.contacto {color: black;
+h2 {font-weight: 600;}
+}
 
 
 }

@@ -1,3 +1,4 @@
+@-webkit-keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
 .frase {
     display: flex;
     height:18.75rem;
@@ -8,10 +9,11 @@
     color: rgb(22, 21, 21);
     border-radius: 10px;
     h2 {
-        font-size: 1.5625rem;
+        font-size: 1.875rem;
         padding: 20px;
-        @include h2_banner;
+       
         height: 50%;
+       
     }
 }
 
@@ -19,4 +21,79 @@ body {
     background: rgb(221,234,237);
 background: linear-gradient(0deg, rgba(221,234,237,1) 48%, rgba(223,227,232,1) 81%);
 
+}
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    column-gap: 1.875rem;
+    
+    margin: 1% auto;
+   
+    .foto-nosotros {
+        width: 100%;
+        background-image: url("../assets/fotos/COMPRAREPUESTOS.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 2px solid rgb(227, 234, 240);
+        
+       
+       
+        border-radius: 10px;
+        margin: 2%;
+        
+        
+        
+    }
+    .texto-nosotros {
+        margin-right: 1.25rem;
+        h2 {
+            font-size: 25px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+           
+        }
+        h3 {
+            font-size: 15px;
+            padding-bottom: 1.25rem;
+            text-align: justify;
+        }
+    }
+}
+
+.marcas {
+    width: 100%;
+    font-size:25px;
+    color: rgb(22, 21, 21);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+   
+
+}
+.nuestras-marcas{
+    width: 70%;
+    height: 1fr;
+    display: flex;
+    justify-content: center;
+    margin: 2% auto;
+   
+    .imgagenes-marcas {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        img {
+            row-gap: 20px;
+        }
+    }
+   
+    
+    
+
+
+    
 }

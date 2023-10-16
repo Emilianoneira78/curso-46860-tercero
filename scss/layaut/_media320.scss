@@ -1,0 +1,138 @@
+
+@media (max-width: 320px) {
+   
+    header {
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+    .frase {
+        width: 100%;
+        margin: 2px;
+        padding-left: 1.25rem;
+        h2{
+            font-size: .875rem;
+            font-weight: 600;
+           
+        }
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        .texto-nosotros {
+           
+            h3 {
+                padding: 10px;
+            }
+
+        }
+        
+    }
+
+    .nuestras-marcas {
+        .imgagenes-marcas{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+        }
+
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4, 1fr);
+        column-gap: .625rem;
+        width: 100%;
+        margin: 2%;
+        
+         .logo  {
+            font-size: .9375rem;
+           }
+    .historiaFooter {
+        padding-left: 1.25rem;
+        h2 {
+            font-size: .875rem;
+        }
+        p {font-size: .875rem;}
+    }
+
+
+    .datos-contacto{
+        padding-left: 1.25rem;
+        font-size: .875rem;
+        h2 {font-size: .875rem;}
+
+    }
+    }
+
+
+   
+.catalogo {color: white;}
+
+
+
+
+
+.cards-cat {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2px;
+}
+
+
+.quienes-main {
+    display: flex;
+    flex-direction: column;
+    .lista {
+        .list {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .hist-quienes {
+            font-size: 12px;
+        }
+    }
+}
+
+/***ofertas***/
+.banner-ofertas {
+    color: white;
+    h2 {
+        font-size: 40px;
+    }
+}
+
+.cards-ofertas {
+    width: 100%;
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        .descripcion {
+            h2 {font-size: 20px;
+            text-align: center;}
+            h3 {text-align: center;}
+        }
+        .precio {
+            padding-bottom: 20px;
+            h4 {font-weight: 600;}
+
+        }
+    }
+}
+    /***contacto***/
+
+.contacto {
+    color: white;
+    
+    h2 {font-weight: 600;}
+}
+.form {padding: 5px;
+margin: 2%;}
+
+
+
+}
