@@ -28,6 +28,9 @@ https://www.figma.com/file/jGeQqgv6fzUMeJpiwhAM5H/Untitled?type=design&mode=desi
 
 - Se incluye Presupuesto.
 
+- Deploy de Netlify
+  https://eclectic-sable-a50ec7.netlify.app/
+
 #### Obsevacion final
 
 Es clara mi falta de conocimiento de Diseño, posiblemente con la practica e investigacion
